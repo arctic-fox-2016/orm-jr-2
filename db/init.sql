@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS students (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  first_name VARCHAR(100),
+  last_name VARCHAR(100)
+  );
+
+
+CREATE TABLE IF NOT EXISTS cohorts (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  cohorts_name VARCHAR(100),
+  FOREIGN KEY (id) REFERENCES cohorts(cohorts_id)
+  );
